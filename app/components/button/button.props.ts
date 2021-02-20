@@ -1,5 +1,10 @@
 import { ViewStyle, TextStyle, TouchableOpacityProps } from "react-native"
 import { ButtonPresetNames } from "./button.presets"
+export const scales = {
+  small: 0.98,
+  large: 0.9,
+}
+type ScaleType = keyof typeof scales
 
 export interface ButtonProps extends TouchableOpacityProps {
   /**
@@ -31,4 +36,11 @@ export interface ButtonProps extends TouchableOpacityProps {
    * One of the different types of text presets.
    */
   children?: React.ReactNode
+
+  color?: string
+  textColor?: string
+  iconColor?: string
+  loading?: boolean
+  size?: number
+  scale?: ScaleType
 }

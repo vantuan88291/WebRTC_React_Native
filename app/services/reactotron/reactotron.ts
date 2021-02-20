@@ -6,6 +6,7 @@ import { ReactotronConfig, DEFAULT_REACTOTRON_CONFIG } from "./reactotron-config
 import { mst } from "reactotron-mst"
 import { clear } from "../../utils/storage"
 import { RootNavigation } from "../../navigation"
+import { NativeModules } from "react-native"
 
 // Teach TypeScript about the bad things we want to do.
 declare global {
@@ -114,7 +115,7 @@ export class Reactotron {
       // configure reactotron
       Tron.configure({
         name: this.config.name || require("../../../package.json").name,
-        host: this.config.host,
+        host: NativeModules.SourceCode.scriptURL.split("://")[1].split(":")[0],
       })
 
       // hookup middleware

@@ -81,3 +81,14 @@ web-build/
 # Configurations
 app/config/env.*.js
 !env.js
+/ios/Podfile.lock
+/android/app/release
+/android/app/src/main/res/drawable-hdpi
+/android/app/src/main/res/drawable-mdpi
+/android/app/src/main/res/drawable-xhdpi
+/android/app/src/main/res/drawable-xxhdpi
+/android/app/src/main/res/drawable-xxxhdpi
+/android/app/src/main/res/raw
+/ios/assets/
+/android/app/src/main/assets/index.android.bundle
+yarn.lock

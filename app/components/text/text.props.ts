@@ -21,7 +21,7 @@ export interface TextProps extends TextProperties {
   /**
    * The text to display if not using `tx` or nested components.
    */
-  text?: string
+  text?: any
 
   /**
    * An optional style override useful for padding & margin.
@@ -32,4 +32,6 @@ export interface TextProps extends TextProperties {
    * One of the different types of text presets.
    */
   preset?: TextPresets
+  size?: number
+  color?: string
 }

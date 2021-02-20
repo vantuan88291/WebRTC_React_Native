@@ -5,7 +5,7 @@
  * You'll likely spend most of your time in this file.
  */
 import React from "react"
-import { createStackNavigator } from "@react-navigation/stack"
+import { CardStyleInterpolators, createStackNavigator } from "@react-navigation/stack"
 import { WelcomeScreen, DemoScreen } from "../screens"
 
 /**
@@ -33,6 +33,9 @@ export function MainNavigator() {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
+        gestureEnabled: true,
+        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+        gestureDirection: "horizontal",
       }}
     >
       <Stack.Screen name="welcome" component={WelcomeScreen} />
