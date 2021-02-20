@@ -1,11 +1,12 @@
 import { Instance, SnapshotOut, types } from "mobx-state-tree"
+import { createChatDefaultModel } from "../chat/chat"
 
 /**
  * A RootStore model.
  */
 // prettier-ignore
 export const RootStoreModel = types.model("RootStore").props({
-
+  chat: createChatDefaultModel()
 })
 
 /**

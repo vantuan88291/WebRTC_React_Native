@@ -30,6 +30,7 @@ import { ToggleStorybook } from "../storybook/toggle-storybook"
 // stack navigation, use `createNativeStackNavigator` in place of `createStackNavigator`:
 // https://github.com/kmagiera/react-native-screens#using-native-stack-navigator
 import { enableScreens } from "react-native-screens"
+import {Socket} from "./components";
 enableScreens()
 
 export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE"
@@ -72,6 +73,7 @@ function App() {
             initialState={initialNavigationState}
             onStateChange={onNavigationStateChange}
           />
+          <Socket />
         </SafeAreaProvider>
       </RootStoreProvider>
     </ToggleStorybook>

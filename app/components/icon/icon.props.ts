@@ -18,4 +18,6 @@ export interface IconProps {
    */
 
   icon?: IconTypes
+  size?: number
+  color?: string
 }

@@ -66,7 +66,7 @@ export function Button(props: ButtonProps) {
       text={text}
       style={textStyle}
       size={size}
-      color={textColor ?? colorText.palette.white}
+      color={textColor ?? colorText.text}
       numberOfLines={1}
     />
   )

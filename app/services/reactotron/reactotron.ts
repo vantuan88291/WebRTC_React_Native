@@ -24,6 +24,7 @@ const noop = () => undefined
 // in dev, we attach Reactotron, in prod we attach a interface-compatible mock.
 if (__DEV__) {
   console.tron = Tron // attach reactotron to `console.tron`
+  console.log = Tron.log
 } else {
   // attach a mock so if things sneaky by our __DEV__ guards, we won't crash.
   console.tron = {

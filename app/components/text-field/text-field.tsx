@@ -14,7 +14,7 @@ const CONTAINER: ViewStyle = {
 const INPUT: TextStyle = {
   fontFamily: typography.primary,
   color: color.text,
-  minHeight: 44,
+  minHeight: 34,
   fontSize: 18,
   backgroundColor: color.palette.white,
 }
@@ -91,7 +91,7 @@ export function TextField(props: TextFieldProps) {
 
   return (
     <View style={containerStyle}>
-      <Text preset="fieldLabel" tx={labelTx} text={label} />
+      {(labelTx || label) && <Text preset="fieldLabel" tx={labelTx} text={label} />}
       <TextInput
         placeholder={actualPlaceholder}
         placeholderTextColor={color.palette.lighterGrey}

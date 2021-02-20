@@ -1,3 +1,2 @@
-export * from "./welcome/welcome-screen"
-export * from "./demo/demo-screen"
+export * from "./chat/chat-screen"
 // export other screens here

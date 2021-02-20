@@ -6,7 +6,7 @@
  */
 import React from "react"
 import { CardStyleInterpolators, createStackNavigator } from "@react-navigation/stack"
-import { WelcomeScreen, DemoScreen } from "../screens"
+import { ChatScreen } from "../screens"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -21,8 +21,7 @@ import { WelcomeScreen, DemoScreen } from "../screens"
  *   https://reactnavigation.org/docs/typescript#type-checking-the-navigator
  */
 export type PrimaryParamList = {
-  welcome: undefined
-  demo: undefined
+  chat: undefined
 }
 
 // Documentation: https://reactnavigation.org/docs/stack-navigator/
@@ -38,8 +37,7 @@ export function MainNavigator() {
         gestureDirection: "horizontal",
       }}
     >
-      <Stack.Screen name="welcome" component={WelcomeScreen} />
-      <Stack.Screen name="demo" component={DemoScreen} />
+      <Stack.Screen name="chat" component={ChatScreen} />
     </Stack.Navigator>
   )
 }
@@ -53,5 +51,5 @@ export function MainNavigator() {
  *
  * `canExit` is used in ./app/app.tsx in the `useBackButtonHandler` hook.
  */
-const exitRoutes = ["welcome"]
+const exitRoutes = ["chat"]
 export const canExit = (routeName: string) => exitRoutes.includes(routeName)
