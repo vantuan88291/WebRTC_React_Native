@@ -6,7 +6,7 @@
  */
 import React from "react"
 import { CardStyleInterpolators, createStackNavigator } from "@react-navigation/stack"
-import { ChatScreen } from "../screens"
+import { ChatScreen, VideoCallScreen } from "../screens"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -22,6 +22,7 @@ import { ChatScreen } from "../screens"
  */
 export type PrimaryParamList = {
   chat: undefined
+  call: undefined
 }
 
 // Documentation: https://reactnavigation.org/docs/stack-navigator/
@@ -38,6 +39,7 @@ export function MainNavigator() {
       }}
     >
       <Stack.Screen name="chat" component={ChatScreen} />
+      <Stack.Screen name="call" component={VideoCallScreen} />
     </Stack.Navigator>
   )
 }

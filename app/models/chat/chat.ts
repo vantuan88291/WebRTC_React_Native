@@ -1,6 +1,6 @@
 import { Instance, SnapshotOut, types } from "mobx-state-tree"
 import { DataChat, DataChatProps } from "./chat.props"
-import { emitSocket } from "../../utils/utils"
+import { deviceName, emitSocket } from "../../utils/utils"
 
 /**
  * Model description here for TypeScript hints.
@@ -26,7 +26,7 @@ export const ChatModel = types
       if (self.msg !== '') {
         emitSocket('sendmsg', {
           id: 1,
-          name: 'Name',
+          name: deviceName,
           message: self.msg
         })
         self.msg = ''

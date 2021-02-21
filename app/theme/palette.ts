@@ -10,4 +10,5 @@ export const palette = {
   blueMidNight: "#042750",
   blueLight: "#E0ECFA",
   blue: "#3C8DF5",
+  darkGreen: "#28793c",
 }

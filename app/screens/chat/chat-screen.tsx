@@ -5,6 +5,8 @@ import { Button, Header, Icon, ItemChat, Row, Screen, TextField } from "../../co
 import { color } from "../../theme"
 import { useStores } from "../../models"
 import { DataChatProps } from "../../models/chat/chat.props"
+import { useNavigation } from "@react-navigation/native"
+import {isIos, isIphonex} from "../../utils/utils";
 
 const ROOT: ViewStyle = {
   backgroundColor: color.palette.white,
@@ -17,6 +19,7 @@ const INPUT_CONTAINER: ViewStyle = {
 const INPUT_STYLE: TextStyle = {
   backgroundColor: color.line,
   paddingHorizontal: 10,
+  paddingVertical: isIos ? (isIphonex() ? 20 : 10) : 5,
   color: color.text,
   maxHeight: 80
 }
@@ -26,16 +29,17 @@ const BTN_SEND: TextStyle = {
 }
 
 export const ChatScreen = observer(function ChatScreen() {
-  // Pull in one of our MST stores
   const { chat } = useStores()
   const scroll = React.useRef(null)
+  const navigation = useNavigation()
 
-  // Pull in navigation via hook
-  // const navigation = useNavigation()
+  const moveToCall = (item: DataChatProps) => {
+    navigation.navigate('call', { name: item.name, isAnswer: false })
+  }
   React.useEffect(() => {
     scroll.current?.scrollToEnd({ animated: true })
   }, [chat.data.length])
-  const renderItem: ListRenderItem<DataChatProps> = ({ item, index }) => <ItemChat item={item} />
+  const renderItem: ListRenderItem<DataChatProps> = ({ item, index }) => <ItemChat moveToCall={moveToCall} item={item} />
   return (
     <Screen style={ROOT} preset="fixed">
       <Header headerTx={'chat.title'} />

@@ -5,6 +5,7 @@ import { color } from "../../theme"
 import { Button, Text } from "../"
 import MenuMaterial from "../material-menu/menu-material"
 import { DataChatProps } from "../../models/chat/chat.props"
+import { deviceName } from "../../utils/utils"
 
 const CONTAINER: ViewStyle = {
   padding: 10,
@@ -40,33 +41,38 @@ const WRAPPER: ViewStyle = {
 }
 export interface ItemChatProps {
     item: DataChatProps
+    moveToCall(item: DataChatProps): void
 }
 
 /**
  * Describe your component here
  */
 export const ItemChat = observer(function ItemChat(props: ItemChatProps) {
-  const { item } = props
+  const { item, moveToCall } = props
   const ref = React.useRef(null)
 
+  const onMoveToCall = () => {
+    ref.current?.hide()
+    moveToCall(item)
+  }
   const renderOption = (
       <MenuMaterial style={MENU} ref={ref}>
         <View style={WRAPPER}>
-         <Button tx={'chat.videoCall'}/>
+         <Button onPress={onMoveToCall} tx={'chat.videoCall'}/>
         </View>
       </MenuMaterial>
   )
   const showOption = () => ref.current?.show()
-  // if (item?.id === 3) {
-  //   return (
-  //           <Button onPress={showOption} preset="normal" style={CONTAINER_SELF}>
-  //               <View style={CONTENT_SELF}>
-  //                   <Text color={color.background} text={item.message}/>
-  //               </View>
-  //               {renderOption}
-  //           </Button>
-  //   )
-  // }
+  if (item?.name === deviceName) {
+    return (
+            <Button preset="normal" style={CONTAINER_SELF}>
+                <View style={CONTENT_SELF}>
+                    <Text color={color.background} text={item.message}/>
+                </View>
+                {renderOption}
+            </Button>
+    )
+  }
   return (
     <Button onPress={showOption} preset="normal" style={CONTAINER}>
       <Text style={NAME} text={item.name}/>

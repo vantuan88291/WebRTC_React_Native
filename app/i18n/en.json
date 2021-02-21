@@ -2,7 +2,8 @@
   "common": {
     "ok": "OK!",
     "cancel": "Cancel",
-    "back": "Back"
+    "back": "Back",
+    "notification": "In comming call..."
   },
   "errors": {
     "invalidEmail": "Invalid email address."
@@ -10,7 +11,8 @@
   "chat": {
     "title": "Room Chat",
     "hint": "Enter message...",
-    "videoCall": "Video Call"
+    "videoCall": "Video Call",
+    "inComming": "%{name} is calling you..."
   },
   "storybook": {
     "placeholder": "Placeholder",

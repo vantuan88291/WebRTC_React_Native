@@ -2,10 +2,11 @@ import * as React from "react"
 import { observer } from "mobx-react-lite"
 import DropdownAlert from "react-native-dropdownalert"
 import { useStores } from "../../models"
-import common from "../../utils/common";
-import {color} from "../../theme";
-import {ImageStyle} from "react-native";
-import {icons} from "../icon/icons";
+import common from "../../utils/common"
+import { color } from "../../theme"
+import { ImageStyle } from "react-native"
+import { icons } from "../icon/icons"
+import {RootNavigation} from "../../navigation";
 
 export interface AlertProps {}
 /**
@@ -25,17 +26,16 @@ export const Alert = observer(function Alert(props: AlertProps) {
 
   React.useEffect(() => {
     if (commons.alert.message !== "") {
-      // eslint-disable-next-line no-unused-expressions
-      ref.current?.alertWithType(commons.alert.type, commons.alert.title, commons.alert.message)
+      ref.current?.alertWithType(commons.alert.type, commons.alert.title, commons.alert.message, commons.alert.payload)
     }
   }, [commons.alert.message])
   const onClose = () => {
     commons.resetAlert()
   }
-  const onAlertTapped = ({type, title, message, action, payload, interval}) => {
+  const onAlertTapped = ({ type, title, message, action, payload, interval }) => {
     if (commons.alert.type === common.ALERT.info) {
       try {
-        const data = JSON.parse(payload)
+        RootNavigation.navigate('call', { name: payload, isAnswer: true })
         onClose()
       } catch (e) {
         onClose()
@@ -48,9 +48,10 @@ export const Alert = observer(function Alert(props: AlertProps) {
       updateStatusBar={false}
       inactiveStatusBarStyle={"light-content"}
       onTap={onAlertTapped}
-      infoColor={color.primary}
-      infoImageSrc={icons.bell}
+      infoColor={color.palette.darkGreen}
+      infoImageSrc={icons.phone}
       imageStyle={IMG}
+      closeInterval={0}
       ref={ref}
     />
   )

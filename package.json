@@ -43,6 +43,7 @@
     "react": "16.14.0",
     "react-native": "^0.63.4",
     "react-native-device-info": "^8.0.1",
+    "react-native-dropdownalert": "^4.3.0",
     "react-native-gesture-handler": "1.8.0",
     "react-native-keychain": "6.2.0",
     "react-native-safe-area-context": "3.1.8",
