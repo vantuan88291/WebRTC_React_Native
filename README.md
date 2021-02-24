@@ -19,6 +19,14 @@ Currently includes:
 ## Backend repo and setup
 https://github.com/vantuan88291/WebRTCsignalServer
 
+## Overview
+<div>
+<img src='https://github.com/vantuan88291/WebRTC_React_Native/raw/master/demo.png' width='250"'>
+<img src='https://github.com/vantuan88291/WebRTCdemoAndroid/raw/master/img1.jpeg' width='250"'>
+</div>
+
+Play Store: https://play.google.com/store/apps/details?id=com.tuan88291.webrtcdemo
+
 The Ignite boilerplate project's structure will look similar to this:
 
 ```
@@ -128,3 +136,6 @@ This is where your stories will be registered and where the Storybook configs wi
 
 This directory will hold your Jest configs and mocks, as well as your [storyshots](https://github.com/storybooks/storybook/tree/master/addons/storyshots) test file. This is a file that contains the snapshots of all your component storybooks.
 
+
+## Android version
+https://github.com/vantuan88291/WebRTCdemoAndroid
