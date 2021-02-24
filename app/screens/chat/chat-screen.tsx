@@ -6,7 +6,7 @@ import { color } from "../../theme"
 import { useStores } from "../../models"
 import { DataChatProps } from "../../models/chat/chat.props"
 import { useNavigation } from "@react-navigation/native"
-import {isIos, isIphonex} from "../../utils/utils";
+import { isIos, isIphonex } from "../../utils/utils"
 
 const ROOT: ViewStyle = {
   backgroundColor: color.palette.white,

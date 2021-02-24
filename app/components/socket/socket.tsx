@@ -9,7 +9,7 @@ import {
   listenSocket,
   setSocket
 } from "../../utils/utils"
-import io from "socket.io-client"
+import {io} from "socket.io-client"
 import common from "../../utils/common"
 import { useStores } from "../../models"
 import { DataChatProps } from "../../models/chat/chat.props"
@@ -30,7 +30,6 @@ export const Socket = observer(function Socket(props: SocketProps) {
     }
   }
   const onNewMsg = (data: DataChatProps) => {
-    console.log('in push', data)
     chat.pushMsg(data)
   }
   const onGetAllMsg = (data: DataChatProps[]) => {
@@ -51,12 +50,12 @@ export const Socket = observer(function Socket(props: SocketProps) {
         model: deviceName
       }
     }))
-    listenSocket('newmsg', onNewMsg)
-    listenSocket('allData', onGetAllMsg)
-    listenSocket('isTyping', isTyping)
-    listenSocket('inComing', inComingCall)
-    listenSocket('onEndCall', onEndCall)
-    emitSocket('getAllData')
+    listenSocket(common.EVENT.newmsg, onNewMsg)
+    listenSocket(common.EVENT.allData, onGetAllMsg)
+    listenSocket(common.EVENT.isTyping, isTyping)
+    listenSocket(common.EVENT.inComing, inComingCall)
+    listenSocket(common.EVENT.onEndCall, onEndCall)
+    emitSocket(common.EVENT.getAllData)
   }
   React.useEffect(() => {
     if (isIos) {

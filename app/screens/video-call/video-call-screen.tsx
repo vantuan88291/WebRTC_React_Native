@@ -2,8 +2,6 @@ import React from "react"
 import { observer } from "mobx-react-lite"
 import { ViewStyle } from "react-native"
 import { Screen } from "../../components"
-// import { useNavigation } from "@react-navigation/native"
-// import { useStores } from "../../models"
 import { color } from "../../theme"
 import { RouteProp, useRoute } from "@react-navigation/native"
 import { deviceName, emitSocket, listenSocket } from "../../utils/utils"
@@ -12,7 +10,9 @@ import {
   RTCPeerConnection,
   RTCIceCandidate,
   mediaDevices,
+  RTCSessionDescription
 } from 'react-native-webrtc'
+import common from "../../utils/common";
 
 const ROOT: ViewStyle = {
   backgroundColor: color.background,
@@ -34,48 +34,35 @@ let connectionBuffer
 
 export const VideoCallScreen = observer(function VideoCallScreen() {
   const [stream, setStream] = React.useState(null)
+  const [remote, setRemote] = React.useState(null)
 
   const route = useRoute<RouteProp<Record<string, VideoCallScreenParam>, string>>()
   const nameCall = route.params?.name
 
   const onRecieved = (data) => {
     console.log('on onRecieved', data)
-    if (data?.candidate != null) {
+    if (data?.candidate != null && connectionBuffer.addIceCandidate != null) {
       const candidateBuffer = new RTCIceCandidate(data)
       connectionBuffer.addIceCandidate(candidateBuffer)
     } else if (data?.type && data?.type === 'offer') {
-      connectionBuffer.setRemoteDescription(data)
+      connectionBuffer.setRemoteDescription(new RTCSessionDescription(data))
+      connectionBuffer.createAnswer().then(desc => {
+        connectionBuffer.setLocalDescription(desc).then(() => {
+          emitSocket(common.EVENT.call, JSON.stringify({ model: nameCall, dataStream: connectionBuffer.localDescription }))
+        })
+      })
     } else if (data?.type && data?.type === 'answer') {
-      connectionBuffer.setRemoteDescription(data)
+      connectionBuffer.setRemoteDescription(new RTCSessionDescription(data))
     }
   }
 
   const onAnswerAccepted = async () => {
-    console.log('on accept', connectionBuffer)
-
+    console.log('on accept')
     connectionBuffer.createOffer().then(desc => {
       connectionBuffer.setLocalDescription(desc).then(() => {
-        // Send pc.localDescription to peer
-        console.log('on accept1111', desc, connectionBuffer.localDescription)
-        emitSocket('call', JSON.stringify({ model: nameCall, dataStream: connectionBuffer.localDescription }))
+        emitSocket(common.EVENT.call, JSON.stringify({ model: nameCall, dataStream: connectionBuffer.localDescription }))
       })
     })
-    // connectionBuffer.onicecandidate = function (event) {
-    //   // send event.candidate to peer
-    //   console.log('in candicate:--', event)
-    //   emitSocket('call', JSON.stringify({ model: nameCall, dataStream: event.candidate }))
-    // }
-    // const connectionBuffer = new RTCPeerConnection(config)
-    // stream?.getTracks.forEach(track =>
-    //   connectionBuffer.addTrack(track, stream),
-    // )
-    // const localDescription = await connectionBuffer.createOffer()
-    //
-    // await connectionBuffer.setLocalDescription(localDescription)
-    //
-    // emitSocket('call', JSON.stringify({ model: nameCall, dataStream: connectionBuffer.localDescription }))
-    //
-    // peerConnections.current.set(nameCall, connectionBuffer)
   }
 
   const setUpVideo = async () => {
@@ -95,10 +82,12 @@ export const VideoCallScreen = observer(function VideoCallScreen() {
       connectionBuffer = new RTCPeerConnection(config)
       connectionBuffer.addStream(s)
       connectionBuffer.onicecandidate = function ({ candidate }) {
-        console.log('in candicatewewewew-------', candidate)
         if (candidate) {
-          emitSocket('call', JSON.stringify({ model: nameCall, dataStream: candidate }))
+          emitSocket(common.EVENT.call, JSON.stringify({ model: nameCall, dataStream: candidate }))
         }
+      }
+      connectionBuffer.onaddstream = function (remote) {
+        setRemote(remote?.stream)
       }
     }
   }
@@ -113,12 +102,12 @@ export const VideoCallScreen = observer(function VideoCallScreen() {
   React.useEffect(() => {
     setUpVideo()
     if (route.params?.isAnswer) {
-      emitSocket('startAnswer', JSON.stringify({ call: nameCall, answer: deviceName }))
+      emitSocket(common.EVENT.startAnswer, JSON.stringify({ call: nameCall, answer: deviceName }))
     } else {
-      emitSocket('startCall', JSON.stringify({ call: deviceName, answer: nameCall }))
+      emitSocket(common.EVENT.startCall, JSON.stringify({ call: deviceName, answer: nameCall }))
     }
-    listenSocket('Received', onRecieved)
-    listenSocket('onAnswerAccept', onAnswerAccepted)
+    listenSocket(common.EVENT.Received, onRecieved)
+    listenSocket(common.EVENT.onAnswerAccept, onAnswerAccepted)
     return stopStream
   }, [])
 
@@ -128,6 +117,13 @@ export const VideoCallScreen = observer(function VideoCallScreen() {
         flex: 1,
         display: 'flex',
         backgroundColor: '#4F4',
+      }} />
+      <RTCView streamURL={remote?.toURL()} style={{
+        width: 200,
+        height: 200,
+        position: 'absolute',
+        bottom: 0,
+        backgroundColor: 'red',
       }} />
     </Screen>
   )

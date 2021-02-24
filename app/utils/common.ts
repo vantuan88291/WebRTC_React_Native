@@ -6,4 +6,17 @@ export default {
     error: "error",
     success: "success",
   },
+  EVENT: {
+    call: 'call',
+    newmsg: 'newmsg',
+    allData: 'allData',
+    isTyping: 'isTyping',
+    inComing: 'inComing',
+    onEndCall: 'onEndCall',
+    getAllData: 'getAllData',
+    startAnswer: 'startAnswer',
+    startCall: 'startCall',
+    Received: 'Received',
+    onAnswerAccept: 'onAnswerAccept',
+  }
 }
