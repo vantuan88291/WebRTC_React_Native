@@ -40,8 +40,9 @@ export const Socket = observer(function Socket(props: SocketProps) {
   const inComingCall = (call: string) => {
     commons.push(translate('chat.inComming', { name: call }), null, call)
   }
-  const onEndCall = (data) => {
-
+  const onEndCall = () => {
+    console.log('on end call from socket')
+    commons.resetAlert()
   }
   const setupSocket = () => {
     setSocket(io(common.BASE_SOCKET, {

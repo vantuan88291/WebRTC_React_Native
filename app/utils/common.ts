@@ -18,5 +18,10 @@ export default {
     startCall: 'startCall',
     Received: 'Received',
     onAnswerAccept: 'onAnswerAccept',
+    endCall: 'endCall',
+  },
+  TRIGGER: {
+    offer: 'offer',
+    answer: 'answer'
   }
 }

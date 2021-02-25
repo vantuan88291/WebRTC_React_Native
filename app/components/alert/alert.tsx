@@ -27,6 +27,8 @@ export const Alert = observer(function Alert(props: AlertProps) {
   React.useEffect(() => {
     if (commons.alert.message !== "") {
       ref.current?.alertWithType(commons.alert.type, commons.alert.title, commons.alert.message, commons.alert.payload)
+    } else {
+      ref.current?.closeAction()
     }
   }, [commons.alert.message])
   const onClose = () => {
