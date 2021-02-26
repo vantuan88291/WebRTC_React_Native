@@ -15,6 +15,7 @@ Currently includes:
 - And more!
 
 ## Quick Start
+Change `BASE_SOCKET` inside common.ts
 
 ## Backend repo and setup
 https://github.com/vantuan88291/WebRTCsignalServer
@@ -137,5 +138,7 @@ This is where your stories will be registered and where the Storybook configs wi
 This directory will hold your Jest configs and mocks, as well as your [storyshots](https://github.com/storybooks/storybook/tree/master/addons/storyshots) test file. This is a file that contains the snapshots of all your component storybooks.
 
 
+## Flutter version
+https://github.com/vantuan88291/webrtc_flutter_demo_bloc
 ## Android version
 https://github.com/vantuan88291/WebRTCdemoAndroid

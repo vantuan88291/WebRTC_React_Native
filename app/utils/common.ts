@@ -1,5 +1,5 @@
 export default {
-  BASE_SOCKET: "http://10.0.10.53:3000",
+  BASE_SOCKET: "http://192.168.31.196:3000",
   ALERT: {
     info: "info",
     warn: "warn",
@@ -10,6 +10,7 @@ export default {
     call: 'call',
     newmsg: 'newmsg',
     allData: 'allData',
+    sendmsg: 'sendmsg',
     isTyping: 'isTyping',
     inComing: 'inComing',
     onEndCall: 'onEndCall',
