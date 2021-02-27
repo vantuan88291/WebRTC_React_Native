@@ -15,11 +15,11 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* WebRTCReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WebRTCReactNativeTests.m */; };
-		67DB48CE4B13DB864D7C6D58 /* libPods-WebRTCReactNative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9111A587D19705A8450079BD /* libPods-WebRTCReactNative-tvOSTests.a */; };
+		5A99DC00323172F1811E76FB /* libPods-WebRTCReactNative-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3550A49D05D44865CE9B576 /* libPods-WebRTCReactNative-tvOS.a */; };
+		72D1BE87F9C0D4C9DD63DC30 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E69D3E6A64772A20074687B2 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B0120D11E67229D75658E5ED /* libPods-WebRTCReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC32AA5020AD06DD72B6497 /* libPods-WebRTCReactNative.a */; };
-		B8F912FD0D4487D398F15D4C /* libPods-WebRTCReactNative-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4AA9355710E97192829839 /* libPods-WebRTCReactNative-tvOS.a */; };
-		FED61800ED9350B7DAF107E3 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52218739F3F142F740F31D03 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a */; };
+		96A2F0B73FA07379F088FAA4 /* libPods-WebRTCReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F678ECAF78949124F00C32 /* libPods-WebRTCReactNative.a */; };
+		DD286F2E9B58694A2A04DB19 /* libPods-WebRTCReactNative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D37C121475070A9F358FFE8 /* libPods-WebRTCReactNative-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,29 +44,29 @@
 		00E356EE1AD99517003FC87E /* WebRTCReactNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTCReactNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* WebRTCReactNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRTCReactNativeTests.m; sourceTree = "<group>"; };
-		01EAC8E95C784A341CCDA864 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
-		03FFD1A342B536FE88E97487 /* Pods-WebRTCReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative/Pods-WebRTCReactNative.debug.xcconfig"; sourceTree = "<group>"; };
-		04E6C8665A17C4C5696C5D13 /* Pods-WebRTCReactNative-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-tvOS.release.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-tvOS/Pods-WebRTCReactNative-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		0965BBBD561DABFAC8DD32D7 /* Pods-WebRTCReactNative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-tvOSTests/Pods-WebRTCReactNative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12620C0E12490B3368BBEB92 /* Pods-WebRTCReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative/Pods-WebRTCReactNative.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* WebRTCReactNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRTCReactNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WebRTCReactNative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WebRTCReactNative/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WebRTCReactNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WebRTCReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WebRTCReactNative/main.m; sourceTree = "<group>"; };
+		147781020758FDBB6DAAE764 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D37C121475070A9F358FFE8 /* libPods-WebRTCReactNative-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebRTCReactNative-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* WebRTCReactNative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebRTCReactNative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* WebRTCReactNative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WebRTCReactNative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52218739F3F142F740F31D03 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebRTCReactNative-WebRTCReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		54124DFA133336D0AE38D4A1 /* Pods-WebRTCReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative.release.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative/Pods-WebRTCReactNative.release.xcconfig"; sourceTree = "<group>"; };
-		70E65DB954AEEB0736A3641E /* Pods-WebRTCReactNative-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-tvOS/Pods-WebRTCReactNative-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		7B4AA9355710E97192829839 /* libPods-WebRTCReactNative-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebRTCReactNative-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C2907621554308FA13C4E98 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48F678ECAF78949124F00C32 /* libPods-WebRTCReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebRTCReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78946C34CC49D27DDAE7D199 /* Pods-WebRTCReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative.release.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative/Pods-WebRTCReactNative.release.xcconfig"; sourceTree = "<group>"; };
+		78EA68A7C389E102FD6E2A51 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = WebRTCReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9111A587D19705A8450079BD /* libPods-WebRTCReactNative-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebRTCReactNative-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABC32AA5020AD06DD72B6497 /* libPods-WebRTCReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebRTCReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA9344EB806A3BD59591BCEB /* Pods-WebRTCReactNative-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-tvOSTests/Pods-WebRTCReactNative-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		C942CECBB3E9618CCEEAD5C6 /* Pods-WebRTCReactNative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-tvOSTests/Pods-WebRTCReactNative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95ADA4851ECC2C436519A704 /* Pods-WebRTCReactNative-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-tvOS.release.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-tvOS/Pods-WebRTCReactNative-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		DEAC03AA6637371E2FC04F98 /* Pods-WebRTCReactNative-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-tvOS/Pods-WebRTCReactNative-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E3550A49D05D44865CE9B576 /* libPods-WebRTCReactNative-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebRTCReactNative-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69D3E6A64772A20074687B2 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebRTCReactNative-WebRTCReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F3B876D59580F805082FE187 /* Pods-WebRTCReactNative-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCReactNative-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-WebRTCReactNative-tvOSTests/Pods-WebRTCReactNative-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FED61800ED9350B7DAF107E3 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a in Frameworks */,
+				72D1BE87F9C0D4C9DD63DC30 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0120D11E67229D75658E5ED /* libPods-WebRTCReactNative.a in Frameworks */,
+				96A2F0B73FA07379F088FAA4 /* libPods-WebRTCReactNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8F912FD0D4487D398F15D4C /* libPods-WebRTCReactNative-tvOS.a in Frameworks */,
+				5A99DC00323172F1811E76FB /* libPods-WebRTCReactNative-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DB48CE4B13DB864D7C6D58 /* libPods-WebRTCReactNative-tvOSTests.a in Frameworks */,
+				DD286F2E9B58694A2A04DB19 /* libPods-WebRTCReactNative-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				ABC32AA5020AD06DD72B6497 /* libPods-WebRTCReactNative.a */,
-				52218739F3F142F740F31D03 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a */,
-				7B4AA9355710E97192829839 /* libPods-WebRTCReactNative-tvOS.a */,
-				9111A587D19705A8450079BD /* libPods-WebRTCReactNative-tvOSTests.a */,
+				48F678ECAF78949124F00C32 /* libPods-WebRTCReactNative.a */,
+				E69D3E6A64772A20074687B2 /* libPods-WebRTCReactNative-WebRTCReactNativeTests.a */,
+				E3550A49D05D44865CE9B576 /* libPods-WebRTCReactNative-tvOS.a */,
+				1D37C121475070A9F358FFE8 /* libPods-WebRTCReactNative-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +152,14 @@
 		71ED362ACEA45F9F60DCD285 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03FFD1A342B536FE88E97487 /* Pods-WebRTCReactNative.debug.xcconfig */,
-				54124DFA133336D0AE38D4A1 /* Pods-WebRTCReactNative.release.xcconfig */,
-				7C2907621554308FA13C4E98 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig */,
-				01EAC8E95C784A341CCDA864 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig */,
-				70E65DB954AEEB0736A3641E /* Pods-WebRTCReactNative-tvOS.debug.xcconfig */,
-				04E6C8665A17C4C5696C5D13 /* Pods-WebRTCReactNative-tvOS.release.xcconfig */,
-				C942CECBB3E9618CCEEAD5C6 /* Pods-WebRTCReactNative-tvOSTests.debug.xcconfig */,
-				BA9344EB806A3BD59591BCEB /* Pods-WebRTCReactNative-tvOSTests.release.xcconfig */,
+				12620C0E12490B3368BBEB92 /* Pods-WebRTCReactNative.debug.xcconfig */,
+				78946C34CC49D27DDAE7D199 /* Pods-WebRTCReactNative.release.xcconfig */,
+				147781020758FDBB6DAAE764 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig */,
+				78EA68A7C389E102FD6E2A51 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig */,
+				DEAC03AA6637371E2FC04F98 /* Pods-WebRTCReactNative-tvOS.debug.xcconfig */,
+				95ADA4851ECC2C436519A704 /* Pods-WebRTCReactNative-tvOS.release.xcconfig */,
+				0965BBBD561DABFAC8DD32D7 /* Pods-WebRTCReactNative-tvOSTests.debug.xcconfig */,
+				F3B876D59580F805082FE187 /* Pods-WebRTCReactNative-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -204,12 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WebRTCReactNativeTests" */;
 			buildPhases = (
-				005BDF8DDBD9A51A30DD4F98 /* [CP] Check Pods Manifest.lock */,
+				4943D5398FA98AD743DD8240 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				D3E67ECEC11CAA44C9EA60C5 /* [CP] Embed Pods Frameworks */,
-				AB7807932E8828094D74C1E3 /* [CP] Copy Pods Resources */,
+				41E62046E6F2286313B104FA /* [CP] Embed Pods Frameworks */,
+				74620FA893E30993A7CE3C91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,14 +225,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WebRTCReactNative" */;
 			buildPhases = (
-				3317E01FA8714D407840954C /* [CP] Check Pods Manifest.lock */,
+				A37699FF3DB503D1C6D424EF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				2A7B9AF32436FF2760178CB8 /* [CP] Embed Pods Frameworks */,
-				C048E7DC448CA15A4F0C2EE6 /* [CP] Copy Pods Resources */,
+				07402617DCEFC0F31ECBDC4F /* [CP] Embed Pods Frameworks */,
+				3DC8821FFB5B084C0A0071F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,7 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WebRTCReactNative-tvOS" */;
 			buildPhases = (
-				AB878CA1231C159427A3AF73 /* [CP] Check Pods Manifest.lock */,
+				23EE0FFFEBC19F6EC91B1610 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -267,7 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WebRTCReactNative-tvOSTests" */;
 			buildPhases = (
-				4B2E6DFD7A8271279207C0F0 /* [CP] Check Pods Manifest.lock */,
+				93EC8D709EA6E482B505F2BA /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -365,28 +365,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		005BDF8DDBD9A51A30DD4F98 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WebRTCReactNative-WebRTCReactNativeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,7 +379,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		2A7B9AF32436FF2760178CB8 /* [CP] Embed Pods Frameworks */ = {
+		07402617DCEFC0F31ECBDC4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,83 +399,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebRTCReactNative/Pods-WebRTCReactNative-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		3317E01FA8714D407840954C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WebRTCReactNative-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4B2E6DFD7A8271279207C0F0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WebRTCReactNative-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB7807932E8828094D74C1E3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB878CA1231C159427A3AF73 /* [CP] Check Pods Manifest.lock */ = {
+		23EE0FFFEBC19F6EC91B1610 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,7 +421,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C048E7DC448CA15A4F0C2EE6 /* [CP] Copy Pods Resources */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		3DC8821FFB5B084C0A0071F8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -537,7 +453,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebRTCReactNative/Pods-WebRTCReactNative-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3E67ECEC11CAA44C9EA60C5 /* [CP] Embed Pods Frameworks */ = {
+		41E62046E6F2286313B104FA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -555,6 +471,90 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4943D5398FA98AD743DD8240 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebRTCReactNative-WebRTCReactNativeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74620FA893E30993A7CE3C91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebRTCReactNative-WebRTCReactNativeTests/Pods-WebRTCReactNative-WebRTCReactNativeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93EC8D709EA6E482B505F2BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebRTCReactNative-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A37699FF3DB503D1C6D424EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebRTCReactNative-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -650,7 +650,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C2907621554308FA13C4E98 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig */;
+			baseConfigurationReference = 147781020758FDBB6DAAE764 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -673,7 +673,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01EAC8E95C784A341CCDA864 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig */;
+			baseConfigurationReference = 78EA68A7C389E102FD6E2A51 /* Pods-WebRTCReactNative-WebRTCReactNativeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -693,7 +693,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03FFD1A342B536FE88E97487 /* Pods-WebRTCReactNative.debug.xcconfig */;
+			baseConfigurationReference = 12620C0E12490B3368BBEB92 /* Pods-WebRTCReactNative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -701,7 +701,7 @@
 				DEVELOPMENT_TEAM = 8U86PB93BF;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WebRTCReactNative/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -718,14 +718,15 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54124DFA133336D0AE38D4A1 /* Pods-WebRTCReactNative.release.xcconfig */;
+			baseConfigurationReference = 78946C34CC49D27DDAE7D199 /* Pods-WebRTCReactNative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8U86PB93BF;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WebRTCReactNative/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -741,7 +742,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70E65DB954AEEB0736A3641E /* Pods-WebRTCReactNative-tvOS.debug.xcconfig */;
+			baseConfigurationReference = DEAC03AA6637371E2FC04F98 /* Pods-WebRTCReactNative-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -769,7 +770,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04E6C8665A17C4C5696C5D13 /* Pods-WebRTCReactNative-tvOS.release.xcconfig */;
+			baseConfigurationReference = 95ADA4851ECC2C436519A704 /* Pods-WebRTCReactNative-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -797,7 +798,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C942CECBB3E9618CCEEAD5C6 /* Pods-WebRTCReactNative-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 0965BBBD561DABFAC8DD32D7 /* Pods-WebRTCReactNative-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -824,7 +825,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA9344EB806A3BD59591BCEB /* Pods-WebRTCReactNative-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = F3B876D59580F805082FE187 /* Pods-WebRTCReactNative-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

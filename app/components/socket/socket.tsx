@@ -59,9 +59,9 @@ export const Socket = observer(function Socket(props: SocketProps) {
     emitSocket(common.EVENT.getAllData)
   }
   React.useEffect(() => {
-    if (isIos) {
-      setupSocket()
-    }
+    // if (isIos) {
+    //   setupSocket()
+    // }
     AppState.addEventListener('change', handleChange)
     return () => {
       disConnectSocket()

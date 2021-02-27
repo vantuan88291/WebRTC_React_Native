@@ -27,6 +27,9 @@ const BTN_SEND: TextStyle = {
   paddingHorizontal: 15,
   paddingVertical: 5
 }
+const ROW_INPUT: ViewStyle = {
+    marginBottom: isIphonex() ? 15 : 0
+}
 
 export const ChatScreen = observer(function ChatScreen() {
   const { chat } = useStores()
@@ -51,7 +54,7 @@ export const ChatScreen = observer(function ChatScreen() {
           keyExtractor={(item, index) => index + 'chat'}
           data={chat.data}
           renderItem={renderItem} />
-          <Row>
+          <Row style={ROW_INPUT}>
               <TextField
                   value={chat.msg}
                   onChangeText={chat.setMsg}
